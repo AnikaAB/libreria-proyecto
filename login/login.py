@@ -12,17 +12,17 @@ function iniciarSesion($usuario, $contrasena) {
 
     foreach ($usuarios as $u) {
         if ($u["usuario"] == $usuario && $u["contrasena"] == $contrasena) {
-            echo "✅ Bienvenido, $usuario!";
+            echo "Bienvenido, $usuario!";
             return true;
         }
     }
 
-    echo "❌ Usuario o contraseña incorrectos.";
+    echo " Usuario o contraseña incorrectos.";
     return false;
 }
 
 function cerrarSesion($usuario) {
-    echo "👋 Sesión cerrada para: $usuario";
+    echo " Sesión cerrada para: $usuario";
 }
 
 // Prueba
